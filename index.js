@@ -97,10 +97,13 @@ controller.hears(['puppy times','puppy','puppy me','dog', 'dog times', 'dog me']
   bot.reply(message, 'http://www.pamperedpetz.net/wp-content/uploads/2015/09/Puppy1.jpg');
 });
 
-controller.on('direct_mention,mention', function(bot, message) {
+controller.on('direct_mention,mention', function (bot, message) {
   bot.reply(message, "What's up? You can request 'puppy times', or 'kitty me' ");
 });
 
+controller.hears('help', 'direct_message,direct_mention', function (bot, message) {
+  bot.reply(message, "What's up? You can request 'puppy times', or 'kitty me' ");
+});
 
 /**
  * AN example of what could be:
