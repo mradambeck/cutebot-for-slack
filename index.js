@@ -89,10 +89,21 @@ controller.hears(['hello', 'hi', 'greetings'], 'direct_message,direct_mention,me
     bot.reply(message, 'Hello!');
 });
 
-controller.on('direct_mention,mention', function(bot, message) {
-  bot.reply(message, "What's up buttercup?");
+controller.hears(['kitty me','kitty','cat','cat me'], 'direct_message,direct_mention,mention', function (bot, message) {
+  bot.reply(message, 'https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg');
 });
 
+controller.hears(['puppy times','puppy','puppy me','dog', 'dog times', 'dog me'], 'direct_message,direct_mention,mention', function (bot, message) {
+  bot.reply(message, 'http://www.pamperedpetz.net/wp-content/uploads/2015/09/Puppy1.jpg');
+});
+
+controller.on('direct_mention,mention', function (bot, message) {
+  bot.reply(message, "What's up? You can request 'puppy times', or 'kitty me' ");
+});
+
+controller.hears('help', 'direct_message,direct_mention', function (bot, message) {
+  bot.reply(message, "What's up? You can request 'puppy times', or 'kitty me' ");
+});
 
 /**
  * AN example of what could be:
