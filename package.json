@@ -1,7 +1,7 @@
 {
-  "name": "easy-peasy-bot",
+  "name": "cutebot",
   "version": "1.0.0",
-  "description": "The awesomest bot evar.",
+  "description": "Brings cutes to Slack",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -9,18 +9,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DEGoodmanWilson/easy-peasy-bot-app.git"
+    "url": "git+https://github.com/mradambeck/cutebot-for-slack.git"
   },
   "keywords": [
     "slack",
     "bot"
   ],
-  "author": "D.E. Goodman-Wilson",
+  "author": "Adam Beck",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app/issues"
+    "url": "https://github.com/mradambeck/cutebot-for-slack.git/issues"
   },
-  "homepage": "https://github.com/DEGoodmanWilson/easy-peasy-bot-app#readme",
+  "homepage": "https://github.com/mradambeck/cutebot-for-slack.git#readme",
   "engines": {
     "node": "5.1.1"
   },
